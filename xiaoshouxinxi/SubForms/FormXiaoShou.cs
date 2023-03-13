@@ -145,19 +145,29 @@ namespace xiaoshouxinxi
 		private void StyleCell(int n)
 		{
 		
-		  CDataGridView cdg = new CDataGridView ();
-		  DataGridViewCellStyle ds = cdg.DsNormal ();
-          DataGridViewCellStyle ds1 = cdg.DsRed ();
+		    CDataGridView cdg = new CDataGridView ();
+		    DataGridViewCellStyle ds = cdg.DsNormal ();
+            DataGridViewCellStyle ds1 = cdg.DsRed ();
 			DataGridViewCellStyle ds2 = cdg.DsLeft();
 			DataGridViewCellStyle ds3 = cdg.DsRedLeft();
 
+			int R = 255; int G = 240; int B = 245;
+
+			if (n % 2 !=0 )
+			{
+				ds.BackColor = System.Drawing.Color.FromArgb(R,G,B);
+                ds1.BackColor = System.Drawing.Color.FromArgb(R, G, B);
+                ds2.BackColor = System.Drawing.Color.FromArgb(R, G, B);
+                ds3.BackColor = System.Drawing.Color.FromArgb(R, G, B);
+            }
 
 
             if (Convert .ToBoolean (DGV.Rows[n].Cells[10].Value) == false){
-          
+              
           	for (int i = 1; i < 11; i++) {
 					if (i == 8) DGV.Rows[n].Cells[i].Style = ds2;
 				    if (i != 8) DGV.Rows[n].Cells[i].Style =ds;
+					
           	}
           }
           else
@@ -174,7 +184,22 @@ namespace xiaoshouxinxi
 		
 		void FormXiaoShouLoad(object sender, EventArgs e)
 		{
-			DeleteRe ("neirong");
+			int width = DGV.Width;
+			DGV.Columns[0].Width = 0;
+			DGV.Columns[1].Width = Convert.ToInt32(width * 0.05);
+			DGV.Columns[2].Width = Convert.ToInt32( width * 0.12);
+            DGV.Columns[3].Width = Convert.ToInt32(width * 0.25);
+            DGV.Columns[4].Width = Convert.ToInt32(width * 0.08);
+            DGV.Columns[5].Width = Convert.ToInt32(width * 0.08);
+            DGV.Columns[6].Width = Convert.ToInt32(width * 0.09);
+            DGV.Columns[7].Width = Convert.ToInt32(width * 0.09);
+            DGV.Columns[8].Width = Convert.ToInt32(width * 0.13);
+			DGV.Columns[9].Width = Convert.ToInt32(width * 0.11);
+            DGV.Columns[10].Width = 0;
+            DGV.Columns[11].Width = 0;
+
+
+            DeleteRe ("neirong");
 			DeleteRe ("beizhu");		
 			InitButton ();
 			DsKehu = new DataSet ();
@@ -212,14 +237,7 @@ namespace xiaoshouxinxi
 			
 		}
 		
-               
-
-
-
-		
         
-
-
 
 		/// <summary>
 	    /// 录入时的数量验证
@@ -343,7 +361,7 @@ namespace xiaoshouxinxi
 	     
 	      //合计，并填写序号
 	      HeJiAndXuHao();
-	      
+			DingWie();
 	      
 	      //把内容和备注 放入 DataTablet以及更新数据库
 	      
@@ -410,6 +428,22 @@ namespace xiaoshouxinxi
           if (chuandi.FormShuo1) formbeizhu .textBox1.Text = "";
 
         }
+
+
+		
+
+
+
+		public void DingWie()
+		{
+              if (DGV.Rows .Count > 1)
+			{
+				//DGV.Rows[DGV.Rows.Count - 1].Selected = true;
+				DGV.CurrentCell = DGV.Rows[DGV.Rows.Count - 1].Cells[1];  
+			}
+
+
+		}
 		
 		/// <summary>
 		/// 点击查询按键
@@ -467,7 +501,7 @@ namespace xiaoshouxinxi
 			dh.close ();
 		    
 			HeJiAndXuHao();
-			
+			DingWie();
 		
 		}
 		
@@ -512,6 +546,7 @@ namespace xiaoshouxinxi
 				DGV.Rows .Remove (dr);
 				DelHeji ();
 				HeJiAndXuHao ();
+			    DingWie();
 		}
 		
 		
@@ -561,8 +596,13 @@ namespace xiaoshouxinxi
 				MessageBox .Show ("请先选择一条记录");
 				return ;
 			}
-			
-			XiuGaiButton();
+            if (DGV.CurrentRow.Cells[3].Value.ToString() == "合计")
+            {
+
+                return;
+            }
+
+            XiuGaiButton();
 			
 			CmbName .Text =DGV .SelectedRows [0].Cells[2].Value.ToString () ;
 			TxtNeiRong .Text =DGV .SelectedRows [0].Cells [3].Value.ToString () ;

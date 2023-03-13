@@ -7,6 +7,7 @@
  * 要改变这种模板请点击 工具|选项|代码编写|编辑标准头文件
  */
 using System;
+using System.Drawing;
 using System .Windows .Forms ;
 
 namespace xiaoshouxinxi
@@ -16,33 +17,44 @@ namespace xiaoshouxinxi
 	/// </summary>
 	public class CDataGridView
 	{
+		public  int FontSize = 10;
+
+		public  string FontKind = "宋体";
+		
+        public DataGridViewCellStyle ds;
+        
 		public DataGridViewCellStyle DsNormal()
 		{
-			DataGridViewCellStyle ds = new DataGridViewCellStyle();
-			ds.Alignment =  DataGridViewContentAlignment.MiddleCenter;
-			ds.ForeColor  = System .Drawing .Color .Black;
-			return ds;
+            ds = new DataGridViewCellStyle();
+            
+            ds.Font = new Font(FontKind, FontSize, FontStyle.Regular);
+            ds.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            ds.ForeColor = System.Drawing.Color.Black;
+            return ds;
 		}
 		
 		public DataGridViewCellStyle DsRed()
 		{
-			DataGridViewCellStyle ds = new DataGridViewCellStyle();
-			ds.Alignment =  DataGridViewContentAlignment.MiddleCenter;
-			ds.ForeColor  = System .Drawing .Color .Red;
+            ds = new DataGridViewCellStyle();
+            ds.Font = new Font(FontKind, FontSize, FontStyle.Regular);
+            ds.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            ds.ForeColor  = System .Drawing .Color .Red;
 			return ds;
 		}
 
         public DataGridViewCellStyle DsLeft()
         {
-            DataGridViewCellStyle ds = new DataGridViewCellStyle();
-            ds.Alignment = DataGridViewContentAlignment.MiddleLeft ;
+            ds = new DataGridViewCellStyle();
+            ds.Font = new Font(FontKind, FontSize, FontStyle.Regular);
             ds.ForeColor = System.Drawing.Color.Black;
+            ds.Alignment = DataGridViewContentAlignment.MiddleLeft ;
             return ds;
         }
 
         public DataGridViewCellStyle DsRedLeft()
         {
-            DataGridViewCellStyle ds = new DataGridViewCellStyle();
+            ds = new DataGridViewCellStyle();
+            ds.Font = new Font(FontKind, FontSize, FontStyle.Regular);
             ds.Alignment = DataGridViewContentAlignment.MiddleLeft;
             ds.ForeColor = System.Drawing.Color.Red;
             return ds;

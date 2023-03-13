@@ -34,28 +34,15 @@ namespace xiaoshouxinxi
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button BtnDelete;
 		private System.Windows.Forms.Button BtnUpdate;
-		private System.Windows.Forms.DataGridView DGV;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
 		private System.Windows.Forms.CheckBox ChbBiaoji;
 		private System.Windows.Forms.GroupBox groupBox3;
 		
 		private System.Windows.Forms.Button BtnChaXun;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.GroupBox groupBox5;
 		private System.Windows.Forms.GroupBox groupBox6;
 		private System.Windows.Forms.Button BtnDaochu;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
 		private System.Windows.Forms.TextBox TxtBianHao;
 		
 		private System.Windows.Forms.TextBox TxtBH;
@@ -84,22 +71,9 @@ namespace xiaoshouxinxi
 		
 		private void InitializeComponent()
 		{
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.DGV = new System.Windows.Forms.DataGridView();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -138,7 +112,21 @@ namespace xiaoshouxinxi
             this.TxtMIn = new System.Windows.Forms.TextBox();
             this.TxtHour = new System.Windows.Forms.TextBox();
             this.TabPDate = new System.Windows.Forms.TabPage();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGV = new System.Windows.Forms.DataGridView();
+            this.table1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -146,137 +134,10 @@ namespace xiaoshouxinxi
             this.TabDateAndTime.SuspendLayout();
             this.TabPTime.SuspendLayout();
             this.TabPDate.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
+            this.table1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // DGV
-            // 
-            this.DGV.AllowUserToAddRows = false;
-            this.DGV.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.DGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column11,
-            this.Column12,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column10,
-            this.Column9});
-            this.DGV.Location = new System.Drawing.Point(4, 12);
-            this.DGV.MultiSelect = false;
-            this.DGV.Name = "DGV";
-            this.DGV.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.DGV.RowTemplate.Height = 23;
-            this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV.Size = new System.Drawing.Size(965, 395);
-            this.DGV.TabIndex = 0;
-            this.DGV.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGV_CellMouseClick);
-            this.DGV.Sorted += new System.EventHandler(this.DGV_Sorted);
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "id";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            this.Column11.Visible = false;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "序号";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            this.Column12.Width = 50;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "姓名";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "商品";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "数量";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 60;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "单价";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 70;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "金额";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 110;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "是否付款";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "日期";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 125;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "备注";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "biaoji";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Visible = false;
-            this.Column10.Width = 5;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "flag";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Visible = false;
-            this.Column9.Width = 5;
             // 
             // groupBox1
             // 
@@ -284,7 +145,7 @@ namespace xiaoshouxinxi
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.CmbName);
             this.groupBox1.Controls.Add(this.TxtSuoXie);
-            this.groupBox1.Location = new System.Drawing.Point(12, 413);
+            this.groupBox1.Location = new System.Drawing.Point(24, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(187, 140);
             this.groupBox1.TabIndex = 1;
@@ -342,7 +203,7 @@ namespace xiaoshouxinxi
             this.groupBox2.Controls.Add(this.TxtNeiRong);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(215, 413);
+            this.groupBox2.Location = new System.Drawing.Point(229, 7);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(311, 141);
             this.groupBox2.TabIndex = 2;
@@ -478,7 +339,7 @@ namespace xiaoshouxinxi
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(44, 592);
+            this.button1.Location = new System.Drawing.Point(31, 176);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 33);
             this.button1.TabIndex = 7;
@@ -489,7 +350,7 @@ namespace xiaoshouxinxi
             // BtnDelete
             // 
             this.BtnDelete.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnDelete.Location = new System.Drawing.Point(188, 592);
+            this.BtnDelete.Location = new System.Drawing.Point(175, 176);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(98, 33);
             this.BtnDelete.TabIndex = 8;
@@ -527,7 +388,7 @@ namespace xiaoshouxinxi
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.TxtBeiZhu);
-            this.groupBox3.Location = new System.Drawing.Point(538, 413);
+            this.groupBox3.Location = new System.Drawing.Point(559, 7);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(231, 141);
             this.groupBox3.TabIndex = 8;
@@ -555,7 +416,7 @@ namespace xiaoshouxinxi
             // BtnChaXun
             // 
             this.BtnChaXun.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnChaXun.Location = new System.Drawing.Point(328, 593);
+            this.BtnChaXun.Location = new System.Drawing.Point(315, 177);
             this.BtnChaXun.Name = "BtnChaXun";
             this.BtnChaXun.Size = new System.Drawing.Size(98, 33);
             this.BtnChaXun.TabIndex = 9;
@@ -568,7 +429,7 @@ namespace xiaoshouxinxi
             this.groupBox6.Controls.Add(this.button3);
             this.groupBox6.Controls.Add(this.button2);
             this.groupBox6.Controls.Add(this.BtnUpdate);
-            this.groupBox6.Location = new System.Drawing.Point(450, 574);
+            this.groupBox6.Location = new System.Drawing.Point(437, 158);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(367, 69);
             this.groupBox6.TabIndex = 10;
@@ -600,7 +461,7 @@ namespace xiaoshouxinxi
             // BtnDaochu
             // 
             this.BtnDaochu.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnDaochu.Location = new System.Drawing.Point(846, 593);
+            this.BtnDaochu.Location = new System.Drawing.Point(833, 177);
             this.BtnDaochu.Name = "BtnDaochu";
             this.BtnDaochu.Size = new System.Drawing.Size(98, 31);
             this.BtnDaochu.TabIndex = 11;
@@ -612,10 +473,10 @@ namespace xiaoshouxinxi
             // 
             this.TabDateAndTime.Controls.Add(this.TabPTime);
             this.TabDateAndTime.Controls.Add(this.TabPDate);
-            this.TabDateAndTime.Location = new System.Drawing.Point(786, 420);
+            this.TabDateAndTime.Location = new System.Drawing.Point(811, 13);
             this.TabDateAndTime.Name = "TabDateAndTime";
             this.TabDateAndTime.SelectedIndex = 0;
-            this.TabDateAndTime.Size = new System.Drawing.Size(176, 134);
+            this.TabDateAndTime.Size = new System.Drawing.Size(171, 131);
             this.TabDateAndTime.TabIndex = 100;
             // 
             // TabPTime
@@ -630,7 +491,7 @@ namespace xiaoshouxinxi
             this.TabPTime.Location = new System.Drawing.Point(4, 22);
             this.TabPTime.Name = "TabPTime";
             this.TabPTime.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPTime.Size = new System.Drawing.Size(168, 108);
+            this.TabPTime.Size = new System.Drawing.Size(163, 105);
             this.TabPTime.TabIndex = 0;
             this.TabPTime.Text = "时间 ";
             // 
@@ -688,32 +549,181 @@ namespace xiaoshouxinxi
             this.TabPDate.Location = new System.Drawing.Point(4, 22);
             this.TabPDate.Name = "TabPDate";
             this.TabPDate.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPDate.Size = new System.Drawing.Size(168, 108);
+            this.TabPDate.Size = new System.Drawing.Size(163, 105);
             this.TabPDate.TabIndex = 1;
             this.TabPDate.Text = "日期";
+            // 
+            // panel1
+            // 
+            this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.BtnDaochu);
+            this.panel1.Controls.Add(this.TabDateAndTime);
+            this.panel1.Controls.Add(this.groupBox6);
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.BtnChaXun);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.BtnDelete);
+            this.panel1.Location = new System.Drawing.Point(3, 598);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(985, 230);
+            this.panel1.TabIndex = 102;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "flag";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Visible = false;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "biaoji";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Visible = false;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "备注";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "日期";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "是否付款";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "金额";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "单价";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "数量";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "商品";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "姓名";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "序号";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "id";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Visible = false;
+            // 
+            // DGV
+            // 
+            this.DGV.AllowUserToAddRows = false;
+            this.DGV.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DGV.ColumnHeadersHeight = 27;
+            this.DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column11,
+            this.Column12,
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column10,
+            this.Column9});
+            this.DGV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DGV.Location = new System.Drawing.Point(3, 3);
+            this.DGV.MultiSelect = false;
+            this.DGV.Name = "DGV";
+            this.DGV.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DGV.RowTemplate.Height = 27;
+            this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGV.Size = new System.Drawing.Size(1065, 589);
+            this.DGV.TabIndex = 0;
+            this.DGV.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGV_CellMouseClick);
+            this.DGV.Sorted += new System.EventHandler(this.DGV_Sorted);
+            // 
+            // table1
+            // 
+            this.table1.ColumnCount = 2;
+            this.table1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.31293F));
+            this.table1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.68707F));
+            this.table1.Controls.Add(this.DGV, 0, 0);
+            this.table1.Controls.Add(this.panel1, 0, 1);
+            this.table1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.table1.Location = new System.Drawing.Point(0, 0);
+            this.table1.Name = "table1";
+            this.table1.RowCount = 2;
+            this.table1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.table1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.table1.Size = new System.Drawing.Size(1302, 845);
+            this.table1.TabIndex = 103;
             // 
             // FormXiaoShou
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(974, 678);
-            this.Controls.Add(this.TabDateAndTime);
-            this.Controls.Add(this.BtnDaochu);
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.BtnChaXun);
-            this.Controls.Add(this.BtnDelete);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.DGV);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1302, 845);
+            this.Controls.Add(this.table1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormXiaoShou";
             this.Text = "销售信息";
             this.Load += new System.EventHandler(this.FormXiaoShouLoad);
-            ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -725,6 +735,10 @@ namespace xiaoshouxinxi
             this.TabPTime.ResumeLayout(false);
             this.TabPTime.PerformLayout();
             this.TabPDate.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
+            this.table1.ResumeLayout(false);
+            this.table1.PerformLayout();
             this.ResumeLayout(false);
 
 		  }
@@ -734,6 +748,21 @@ namespace xiaoshouxinxi
         private System.Windows.Forms.TextBox TxtMIn;
         private System.Windows.Forms.TextBox TxtHour;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridView DGV;
+        private System.Windows.Forms.TableLayoutPanel table1;
     }
 	}
 

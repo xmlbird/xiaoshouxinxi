@@ -81,3 +81,4 @@ E:\project\xiaoshouxinxi\xiaoshouxinxi\xiaoshouxinxi\bin\Debug\xiaoshouxinxi.exe
 E:\project\xiaoshouxinxi\xiaoshouxinxi\xiaoshouxinxi\bin\Debug\xiaoshouxinxi.pdb
 E:\project\xiaoshouxinxi\xiaoshouxinxi\xiaoshouxinxi\obj\Debug\xiaoshouxinxi.csproj.CopyComplete
 E:\project\xiaoshouxinxi\xiaoshouxinxi\xiaoshouxinxi\obj\Debug\xiaoshouxinxi.FormRestore.resources
+F:\project\xiaoshouxinxi\xiaoshouxinxi\obj\Debug\xiaoshouxinxi.FormRestore.resources

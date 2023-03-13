@@ -35,8 +35,8 @@ namespace xiaoshouxinxi
 		public void  closeMdiChild(){
 		  if (this.MdiChildren.Length > 0) {
             foreach (Form myForm in this.MdiChildren)
-         myForm.Close(); 
-       } 
+               myForm.Close(); 
+           }   
 		}
 			
 		//窗体加载	
@@ -85,13 +85,14 @@ namespace xiaoshouxinxi
         {
            
 			FormBackup formbackup = new FormBackup();
-            formbackup.Show();
+		    formbackup.ShowDialog();
         }
 
         private void 数据库恢复ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 			FormRestore formrestore = new FormRestore();
-			formrestore.Show();
+			
+			formrestore.ShowDialog ();
         }
     }
 	

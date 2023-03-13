@@ -106,14 +106,14 @@ namespace xiaoshouxinxi
             // 数据库备份ToolStripMenuItem1
             // 
             this.数据库备份ToolStripMenuItem1.Name = "数据库备份ToolStripMenuItem1";
-            this.数据库备份ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.数据库备份ToolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
             this.数据库备份ToolStripMenuItem1.Text = "数据库备份";
             this.数据库备份ToolStripMenuItem1.Click += new System.EventHandler(this.数据库备份ToolStripMenuItem1_Click);
             // 
             // 数据库恢复ToolStripMenuItem
             // 
             this.数据库恢复ToolStripMenuItem.Name = "数据库恢复ToolStripMenuItem";
-            this.数据库恢复ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.数据库恢复ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.数据库恢复ToolStripMenuItem.Text = "数据库恢复";
             this.数据库恢复ToolStripMenuItem.Click += new System.EventHandler(this.数据库恢复ToolStripMenuItem_Click);
             // 
@@ -128,6 +128,7 @@ namespace xiaoshouxinxi
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "销售单生成";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainFormLoad);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
