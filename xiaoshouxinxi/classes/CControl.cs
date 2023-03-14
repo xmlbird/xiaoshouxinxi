@@ -26,6 +26,8 @@ public class CControls
 	{
 		this.ctrl = ctrl;
 	}
+
+    
 	
 	#region  按下回车下一个控件获得焦点
     /// <summary>
@@ -34,13 +36,18 @@ public class CControls
     /// <param name="sender">调用者</param>
     /// <param name="e">按键参数</param>
     /// <param name="ctrl">控件数组</param>
-    private void Kp (Object sender, KeyEventArgs  e,List<Control> ctrl) 
+    private void Kp (Object sender, KeyEventArgs  e, List<Control> ctrl) 
     {
     	for (int i = 0; i < ctrl.Count -1; i++) {
     		if (sender == ctrl[i]) {
-       	  	    if (e.KeyValue  == 13 ) {
+                if (ctrl[i].Tag != null && ctrl[i].Text =="")    //必填项，如果为空则跳出方法，已经事先给必填项的tag设为1
+                {
+                    return;
+                }   	  	    
+                if (e.KeyValue  == 13 ) {
     				ctrl[i+1].Focus ();
-       	  	    }
+       	  	    
+                }
     			
        	  }
     		
@@ -52,11 +59,16 @@ public class CControls
 
     #region //使用委托调用获得焦点函数，因为 KeyDown 事件委托 只允许 send和e 这两个参数 
   
-    public void KeyPorD (object sender,KeyEventArgs  e)
+    public void KeyPorD (object sender,KeyEventArgs e)
     {
-    	KP kp = new KP(Kp);
+    	        
+        KP kp = new KP(Kp);
     	kp.Invoke (sender,e,ctrl);
     }
-  
-    #endregion 
+
+    #endregion
+
+   
+
+
 }

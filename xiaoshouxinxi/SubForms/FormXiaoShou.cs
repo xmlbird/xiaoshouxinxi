@@ -423,6 +423,8 @@ namespace xiaoshouxinxi
 	      TxtBeiZhu .Text ="";
 	      TxtBianHao .Text ="";
 	      TxtBH .Text ="";
+		  TxtSuoXie.Text = "";
+			TxtShuoLiang.Text = "1";
 	      ChbBiaoji .Checked = false ;
 		  if (chuandi.FormShuo) formnerong.textBox1.Text = "";
           if (chuandi.FormShuo1) formbeizhu .textBox1.Text = "";
@@ -505,13 +507,24 @@ namespace xiaoshouxinxi
 		
 		}
 		
-		
-		/// <summary>
-		/// 点击删除按键
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
-		void BtnDeleteClick(object sender, EventArgs e)
+
+
+		public void Dgv_delete(Object sender, KeyEventArgs e)
+		{
+			
+			if (e.KeyValue == 46)
+			{
+				BtnDeleteClick(sender, e);		
+			}
+
+		}
+
+        /// <summary>
+        /// 点击删除按键
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void BtnDeleteClick(object sender, EventArgs e)
 		{
 			if (DGV.SelectedRows .Count ==0) {
 				MessageBox .Show ("请先选择一条记录");
@@ -546,7 +559,7 @@ namespace xiaoshouxinxi
 				DGV.Rows .Remove (dr);
 				DelHeji ();
 				HeJiAndXuHao ();
-			    DingWie();
+			    
 		}
 		
 		
@@ -562,7 +575,7 @@ namespace xiaoshouxinxi
 				button2 .Enabled =true ;
 				button3 .Enabled =true;
 				BtnDaochu .Enabled = false  ;
-			}
+		}
 		
 		/// <summary>
 		/// 初始控件状态
@@ -1033,6 +1046,13 @@ namespace xiaoshouxinxi
         {
 			label10.Text = dateTimePicker1.Value.ToString("yyyy年MM月dd日");
         }
+
+
+		
+
+
+
+
     } //窗体类
 
 
